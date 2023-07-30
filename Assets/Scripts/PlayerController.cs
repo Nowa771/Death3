@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         // This code was made by Aaron.Goss as a in class toturial though i have changed the code a bit
         Vector3 moveDirection = Vector3.zero;
