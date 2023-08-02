@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 9068698945208359}
   - component: {fileID: 1330203961514262743}
   - component: {fileID: 1217884900758312193}
-  m_Layer: 0
+  - component: {fileID: 4148986741307470243}
+  m_Layer: 7
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,6 +119,19 @@ MonoBehaviour:
   backKey: 274
   leftKey: 276
   rightKey: 275
+--- !u!135 &4148986741307470243
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434257242859062982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.151751
+  m_Center: {x: -0.00000023841858, y: -0.00000001117587, z: 0.0000008717179}
 --- !u!1 &2063001762400375271
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,9 +141,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723349789188377437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CUBE red
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

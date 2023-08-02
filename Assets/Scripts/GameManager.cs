@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,10 +6,14 @@ public class GameManager : MonoBehaviour
 {
     private int startingSceneIndex;
     private bool isPlayerDestroyed = false;
+    private FloorActivation[] floorActivations;
 
     private void Start()
     {
         startingSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        floorActivations = FindObjectsOfType<FloorActivation>();
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public void PlayerDestroyed()
@@ -45,4 +50,20 @@ public class GameManager : MonoBehaviour
             RestartGame();
         }
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Check if a new scene has been loaded and reset the activatedFloorsCount
+        foreach (FloorActivation floorActivation in floorActivations)
+        {
+            floorActivation.ResetActivatedFloorsCount();
+        }
+    }
 }
+ 
+
+
+
+
+
+
