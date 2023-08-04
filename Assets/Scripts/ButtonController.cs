@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    public PlatformController platformController;
+    public PlatformController platformController1;
+    public PlatformController platformController2;
     private bool isButtonPressed = false;
 
     private void Update()
@@ -20,8 +21,9 @@ public class ButtonController : MonoBehaviour
         if (other.CompareTag("Player") && !isButtonPressed)
         {
             isButtonPressed = true;
-            platformController.TogglePlatform();
-            Debug.Log("Button Pressed - Platform Activated");
+            platformController1.TogglePlatform();
+            platformController2.TogglePlatform();
+            Debug.Log("Button Pressed - Platforms Activated");
         }
     }
 
@@ -30,7 +32,8 @@ public class ButtonController : MonoBehaviour
         if (other.CompareTag("Player") && isButtonPressed)
         {
             isButtonPressed = false;
-            platformController.LowerPlatform();
+            platformController1.LowerPlatform();
+            platformController2.LowerPlatform();
             Debug.Log("Player Exited Button Area");
         }
     }
