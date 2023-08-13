@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9029202259655022491}
   - component: {fileID: 715813825329311370}
   - component: {fileID: 4534287032685894959}
-  m_Layer: 3
+  m_Layer: 10
   m_Name: RedBlock
   m_TagString: Floor
   m_Icon: {fileID: 0}

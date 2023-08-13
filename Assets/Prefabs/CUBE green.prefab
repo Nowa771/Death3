@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe20e50cf72112d4fbe4506ffef2b21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 250
+  movementSpeed: 150
   forwardKey: 115
   backKey: 119
   leftKey: 100
@@ -158,7 +158,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263862659237664438}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 529f70619e783124e9fefb12b2c938fa, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

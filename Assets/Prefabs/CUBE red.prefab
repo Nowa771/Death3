@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4148986741307470243}
   m_Layer: 7
   m_Name: pCube3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe20e50cf72112d4fbe4506ffef2b21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 250
+  movementSpeed: 150
   forwardKey: 273
   backKey: 274
   leftKey: 276
@@ -126,7 +126,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434257242859062982}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 529f70619e783124e9fefb12b2c938fa, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
